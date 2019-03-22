@@ -1,9 +1,9 @@
 {
-  "name": "ld-button",
+  "name": "button",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@srdspgit1.eu.lectra.com:k.zhou/ld-button.git",
-  "author": "Kai Zhou <k.zhou@lectra.com>",
+  "repository": "https://github.com/kzde/button.git",
+  "author": "kzde",
   "license": "MIT",
   "dependencies": {
     "@types/react": "^16.8.8",
@@ -19,11 +19,13 @@
     "@storybook/addon-links": "^5.0.3",
     "@storybook/addons": "^5.0.3",
     "@storybook/react": "^5.0.3",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-loader": "^8.0.5",
     "typescript": "^3.3.4000"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -c .storybook -o .out"
+    "build-storybook": "build-storybook -c .storybook -o .out",
+    "deploy-storybook": "storybook-to-ghpages"
   }
 }
